@@ -8,6 +8,14 @@ var students = [
 
 students.sort(function(a, b) {
 
+  return b.age - a.age;
+
+});
+
+// console.log(students);
+
+students.sort(function(a, b) {
+
   var nameA = a.name.toLowerCase();
   var nameB = b.name.toLowerCase();
   if (nameA < nameB) {
@@ -21,3 +29,6 @@ students.sort(function(a, b) {
 });
 
 console.log(students);
+
+
+
